@@ -1,0 +1,87 @@
+body{
+    background-color: rgb(117, 116, 116);
+    background-image: url('../img/linda.jpg');
+    background-repeat: no-repeat;
+}
+.rodape{
+    padding: 3%;
+}
+.titulos {
+    line-height: 3;
+    text-align: center;
+    font-weight: bold;
+}
+h1{
+    color: rgb(128, 1, 1);
+    font-size: 2em;
+}
+h2 {
+    color: rgb(128, 1, 1);
+    font-size: 1.5em;
+}
+p{
+    line-height: 1.5;
+    font-size: 1.2em;
+    text-align: justify;
+    
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+   }
+   nav ul li {
+        margin: 0 10px;
+   }
+   nav ul li a {
+      color: rgb(233, 233, 233);
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+   }
+   nav ul li a:hover{
+       background-color: rgb(220, 20, 20);
+       border-radius: 5px;
+   }
+   .menu-icon {
+       display: none;
+       font-size: 30px;
+       color: white;
+       cursor: pointer;
+   }
+   
+   #menu-toggle {
+       display: none;
+   }
+   @media (max-width: 768px) {
+       .menu-icon {
+           display: block;
+           padding-right: 10px;
+       }
+       nav ul {
+           display: none;
+           flex-direction: column;
+           width: 100%;
+           background-color: rgb(0, 0, 0);
+           position: absolute;
+           top:60px;
+           left: 0;
+           z-index: 1000;
+           padding: 0;
+       }
+       #menu-toggle:checked + .menu-icon + ul{
+           display: flex;
+       }
+       nav ul li{
+           text-align: center;
+           margin: 0;
+       }
+       nav ul a {
+           padding: 15px 0;
+       } 
+       nav ul li label {
+           width: 100%;
+           display: block;
+       }
+   }

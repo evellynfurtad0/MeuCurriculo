@@ -6,25 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu site com Bootstrap</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
    <header>
     <!-- Aqui vai o menu de navegação -->
-   </header>
+    <nav id="menu">
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul>
+          <li><a href="#estilo" onclick="document.getElementById('menu-toggle').click()">Estilo Musical</a></li>
+          <li><a href="#participantes" onclick="document.getElementById('menu-toggle').click()">Participantes (Banda)</a></li>
+          <li><a href="#premios" onclick="document.getElementById('menu-toggle').click()">Prêmios e Nomeações</a></li>
+          <li><a href="#atualmente" onclick="document.getElementById('menu-toggle').click()">Atualmente</a></li>
+          <li><a href="#sobre" onclick="document.getElementById('menu-toggle').click()">Sobre</a></li>
+          <li><a href="#contato" onclick="document.getElementById('menu-toggle').click()">Contato</a></li>
+      </ul>
     <div class="container">
-     <main>
+      <!--carrosel-->
+       <!-- img e H1-->
+      <p>Evellyn Furtado</p>
+     <h1>Curriculo Online</h1>
+
+  <br>
+  <br>  
+  <br>  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <br>
+  <br>  
+  <br>  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
       <section>
         <!-- Aqui vai um breve comentario sobre vc 1pg-->
+         <h2>Sobre mim</h2>
+         <img src="" alt="">
+        <p>Me chamo Evellyn, atualmente estudo no Ensino Médio com habilitação no curso de Informática para a Internet na ETEC Professora Maria Cristina Medeiros em Ribeirão Pires. Além disso, participo de uma pré iniciação científica que é o RecolheAI, onde participei da 15° Feteps.</p>
       </section>
       <section>
             <!-- Aqui vão aparecer 4 cards mostando os cursos que já fiz -->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card">
+                  <img src="img/logopequenos.svg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Pequenos Talentos</h5>
+                    <p class="card-text">Participei do programa Pequenos Talentos em 2023, onde adquiri habilidades com robotica, html e css, e App Inventor.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="img/etecmcm.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">ETEC MCM</h5>
+                    <p class="card-text">Atualmente estou cursando Informatica para Internet na etec mcm, onde aprendi Python, conhecimentos com photoshop, html e css, entre outros.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="img/logoolavo.jfif" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">RecolheAI</h5>
+                    <p class="card-text">O RecolheAi é uma pré-iniciação cientifica produzida por mim e por mais 2 colegas, uma lixeira inteligente q usa visão computacoinal p identificar certos residuoos. </p>
+                  </div>
+                </div>
+              </div>
+              
       </section>
       <section>
+        <h2>Competencias</h2>
           <!-- Aqui vou listar as minhas principais competencias socio-emocionais e descrever cada uma"Sou comunicativa pq..." -->
           <!-- vou usar um componente chamado accordion do botstrap -->
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Empatia
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Dedicação
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Curiosidade
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+          
       </section> 
       <section>
         <!-- aqui vai um formulario de contato -->
+         <h2>Contato</h2>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
       </section>
      </main>
    </div>
