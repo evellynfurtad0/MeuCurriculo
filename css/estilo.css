@@ -1,28 +1,48 @@
 body{
-    background-color: rgb(117, 116, 116);
+    background-color: rgb(160, 122, 158);
     background-image: url();
     background-repeat: no-repeat;
 }
 .rodape{
     padding: 3%;
 }
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(128, 47, 182);
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
 .titulos {
     line-height: 3;
     text-align: center;
     font-weight: bold;
 }
+.logo img {
+    width: 15%;
+    height: auto;
+    max-width: 100%;
+}
 h1{
-    color: rgb(128, 1, 1);
+    color:rgb(0, 38, 255);
     font-size: 2em;
 }
 h2 {
-    color: rgb(128, 1, 1);
+    color: rgb(0, 38, 255);
     font-size: 1.5em;
 }
 h4{
     color: blueviolet;
 }
-p{
+h3{
+    color: rgb(41, 230, 3);
+}
+.comeco{
     line-height: 1.5;
     font-size: 1.2em;
     text-align: justify;
@@ -44,7 +64,7 @@ nav ul {
       display: block;
    }
    nav ul li a:hover{
-       background-color: rgb(220, 20, 20);
+       background-color: rgb(48, 50, 167);
        border-radius: 5px;
    }
    .menu-icon {
@@ -99,15 +119,19 @@ figure {
 figure img {
     display: block;
     margin: 0 auto;
-    box-shadow: 0px 4px 8px rgba(241, 4, 4, 0.7);
+    box-shadow: 0px 4px 8px rgba(38, 14, 175, 0.7);
     max-width: 100%;
     height: auto;
 }
 figure figcaption {
     margin: 1.0em;
     text-align: center;
-    color: gold;
+    color: rgba(58, 28, 83, 0.432);
 }
 .preto{
     color: rgb(0, 0, 0);
 }
+footer{
+    background-color: rgb(128, 47, 182);
+}
+

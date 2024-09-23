@@ -9,142 +9,114 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-   <header>
+   <header class="cabecalho">
     <!-- Aqui vai o menu de navegação -->
-    <nav id="menu">
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-      <ul>
-          <li><a href="#estilo" onclick="document.getElementById('menu-toggle').click()">Quem eu sou</a></li>
-          <li><a href="#participantes" onclick="document.getElementById('menu-toggle').click()">Cursos</a></li>
-          <li><a href="#premios" onclick="document.getElementById('menu-toggle').click()">RecolheAI</a></li>
-          <li><a href="#atualmente" onclick="document.getElementById('menu-toggle').click()">Coompetencias</a></li>
-          <li><a href="#sobre" onclick="document.getElementById('menu-toggle').click()">Sobre</a></li>
-          <li><a href="#contato" onclick="document.getElementById('menu-toggle').click()">Contato</a></li>
-      </ul>
+      <div class="logo">
+          <img src="img/logopc.png" alt="">
+          </div>
+          <nav id="menu">
+              <input type="checkbox" id="menu-toggle">
+              <label for="menu-toggle" class="menu-icon">&#9776;</label>
+              <ul>
+                  <li><a href="#quemeusou" onclick="document.getElementById('menu-toggle').click()">Quem eu sou</a></li>
+                  <li><a href="#carreira" onclick="document.getElementById('menu-toggle').click()">Carreira Acadêmica</a></li>
+                  <li><a href="#competencias" onclick="document.getElementById('menu-toggle').click()">Competências</a></li>
+                  <li><a href="#conhecimentos" onclick="document.getElementById('menu-toggle').click()">Conhecimentos</a></li>
+                  <li><a href="#contato" onclick="document.getElementById('menu-toggle').click()">Contato</a></li>
+              </ul>
+          </nav>
+      </header>
+    <main>   
     <div class="container">
-      <!--carrosel-->
-      <h1 class="titulos">CURRICULO ONLINE</h1>
-      
-      <section>
+     
+      <img src="img/curriculo_online.png" class="img-fluid" alt="...">
+      <section  id="quemeusou">
         <!-- Aqui vai um breve comentario sobre vc 1pg-->
-       
-         <h2 class="titulos">Quem sou eu</h2>
+         <h2 class="titulos">QUEM SOU EU</h2>
          <div class="clearfix">
-          <img src="img/linda.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+          <img src="img/img1.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
         
-          <p>
-            Olá, me chamo Evellyn e tenho 15 anos. 
+          <p class="comeco">
+            Me chamo Evellyn Furtado. 
           </p>
         
-          <p>
+          <p class="comeco">
             Sou estudante do 1 ano do Ensino médio integrado com o curso de Informática para Internet na ETEC Prof. Maria Cristinha Medeiros, e sou apaixonada por tudo que a tecnologia tem a oferecer. No meu período extracurricular, participo da mentoria "Conectados", onde estou aprendendo C#.
           </p>
         
-          <p>
+          <p class="comeco">
             Além disso, também participo de uma pré-iniciação científica. Sou uma pessoa dedicada e sempre busco aprender coisas novas e enfrentar desafios que me ajudem a me desenvolver não só profissionalmente, mais que me ajudem no meu pessoal.
           </p>
         </div>
-      <section>
+      <section id="carreira">
             <!-- Aqui vão aparecer 4 cards mostando os cursos que já fiz -->
-            <h2 class="titulos">CURSOS</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-              <div class="col">
-                <div class="card">
-                  <img src="img/logopequenos.svg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Pequenos Talentos</h5>
-                    <p class="card-text">Participei do programa Pequenos Talentos em 2023, onde adquiri habilidades com robotica, html e css, e App Inventor.</p>
-                  </div>
+            <h2 class="titulos">CARREIRA ACADÊMICA</h2>
+            <div class="card-group">
+              <div class="card">
+                <img src="img/logopequenos.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pequenos Talentos</h5>
+                  <p class="card-text">Participei do programa Pequenos Talentos em 2023, onde adquiri habilidades com robotica, html e css, e App Inventor.</p>
+                  <p class="card-text"><small class="text-body-secondary">09/2024</small></p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card">
-                  <img src="img/etecmcm.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">ETEC MCM</h5>
-                    <p class="card-text">Atualmente estou cursando Informatica para Internet na etec mcm, onde aprendi Python, conhecimentos com photoshop, html e css, entre outros.</p>
-                  </div>
+              <div class="card">
+                <img src="img/1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">ETEC MCM</h5>
+                  <p class="card-text">Atualmente estou cursando Ensino Médio integrado com o curso Informatica para Internet na ETEC Maria Cristina Medeiros.</p>
+                  <p class="card-text"><small class="text-body-secondary">09/2024</small></p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card">
-                  <img src="img/logoolavo.jfif" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">RecolheAI</h5>
-                    <p class="card-text">O RecolheAi é uma pré-iniciação cientifica produzida por mim e por mais 2 colegas, uma lixeira inteligente que atraves da visão computacoinal para identificar certos residuoos. </p>
-                  </div>
+              <div class="card">
+                <img src="img/2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CEL</h5>
+                  <p class="card-text">Eu estou cursando o primeiro semestre de inglês no Centro de Línguas no Olavo Hansen, onde sairei com o certificado de fluência B2.</p>
+                  <p class="card-text"><small class="text-body-secondary">09/2024</small></p>
                 </div>
-              </div>
-             
-      </section>
-      <section>
-        <h2 class="titulos">COMPETENCIAS</h2>
-          <!-- Aqui vou listar as minhas principais competencias socio-emocionais e descrever cada uma"Sou comunicativa pq..." -->
-          <!-- vou usar um componente chamado accordion do botstrap -->
-          <div class="container text-center">
-            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-              <div class="col">
-                <div class="p-3">Row column</div>
-              </div>
-              <div class="col">
-                <div class="p-3">Row column</div>
-              </div>
-              <div class="col">
-                <div class="p-3">Row column</div>
-              </div>
-              <div class="col">
-                <div class="p-3">Row column</div>
-              </div>
-              <div class="col">
-                <div class="p-3">Row column</div>
-              </div>
-              <div class="col">
-                <div class="p-3">Row column</div>
-              </div>
-              <div class="col">
-                <div class="p-3">Row column</div>
-              </div>
-              <div class="col">
-                <div class="p-3">Row column</div>
-              </div>
-              <div class="col">
-                <div class="p-3">Row column</div>
-              </div>
-              <div class="col">
-                <div class="p-3">Row column</div>
               </div>
             </div>
-          </div>
+            <br>
+            <h3 class="titulos">RecolheAI</h3>
+            <div class="caixa-imagem">
+              <figure>
+                  <img src="img/recolheai-site.jpeg" alt="">
+                  <figcaption>Imagem do grupo RecolheAI.</figcaption>
+                </figure>
+           </div>
+            <p>Participo de uma pré iniciação científica, o RecolheAI. Desenvolvimento por mim, Vitor Lopes e Artur Gael.
+              O RecolheAI é uma lixeira e esteira capaz de identificar metal, plástico e papel e colocá-los em seu compartimento adequado. Assim ajudando o meio ambiente, e também as pessoas que não sabem as cores da lixeira seletiva.
+              Participamos da 15° Feteps (Feira Tecnologia do Centro Paula Souza), onde ficamos em primeiro lugar no prêmio "Um mundo sem lixo", e no final de setembro de 2024 participaremos da 6° Fenadante (Feira de Ciência e Tecnologia das Nações Colégio Dante Alighieri).</p>
+      </section>
+      <section id="competencias">
+        <h2 class="titulos">COMPETÊNCIAS</h2>
+          <!-- Aqui vou listar as minhas principais competencias socio-emocionais e descrever cada uma"Sou comunicativa pq..." -->
+          <!-- vou usar um componente chamado accordion do botstrap -->
           <div class="caixa-imagem">
             <figure>
                 <img src="img/competencias.png" alt="">
-                <figcaption>competencias.</figcaption>
+                <figcaption>Competencias.</figcaption>
               </figure>
          </div>
-          
-      </section> 
-      <section>
-        <h2 class="titulos">Meu avanço</h2>
-        <!-- falar sobre oq eu sei programar, explicar o recoheai -->
-        <div class="list-group">
+         <div class="list-group">
           <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
-          ÁREAS DE CONHECIMENTO
+            Minhas Competências Socioemocionais (Seguindo 2 de cada da Tabela a cima)
           </button>
-          <button type="button" class="list-group-item list-group-item-action">HTML E CSS</button>
-          <button type="button" class="list-group-item list-group-item-action">PYTHON</button>
-          <button type="button" class="list-group-item list-group-item-action">CSHARP C#</button>
-          <button type="button" class="list-group-item list-group-item-action">ILUSTRATOR</button>
-          <button type="button" class="list-group-item list-group-item-action">PHOTOSHOP</button>
-          <button type="button" class="list-group-item list-group-item-action">Pacote Office (Word, Excel, PowerPoint)</button>
+          <button type="button" class="list-group-item list-group-item-action">Organização</button>
+          <button type="button" class="list-group-item list-group-item-action">Responsabilidade</button>
+          <button type="button" class="list-group-item list-group-item-action">Iniciativa Social</button>
+          <button type="button" class="list-group-item list-group-item-action">Empatia</button>
+          <button type="button" class="list-group-item list-group-item-action">Respeito</button>
+          <button type="button" class="list-group-item list-group-item-action">Tolerância estresse</button>
+          <button type="button" class="list-group-item list-group-item-action">Tolerância a frustação</button>
+          <button type="button" class="list-group-item list-group-item-action">Curiosidade para aprender</button>
         </div>
-        <div id="carouselExampleCaptions" class="carousel slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <br>
+      </section> 
+      <section id="conhecimentos">
+        <h2 class="titulos">CONHECIMENTOS</h2>
+        <!-- falar sobre oq eu sei programar -->
+        
           <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -170,7 +142,7 @@
                 <img src="img/python.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5 class="preto">Python</h5>
-                  <p class="preto">A minha segunda linguagem de programação onde tenho conhecimento.
+                  <p class="preto">A segunda linguagem de programação onde tenho mais conhecimento.
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -192,8 +164,45 @@
           </button>
         </div>
         <p></p>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                CSHARP
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <strong>A linguagem onde tenho mais conhecimento.</strong> Participo de uma mentoria onde me passam atividades e conceitos do C#. Atualmente é a linguagem de programação onde obtenho maior conhecimento, e é uma linguagem que pretendo melhorar cada vez mais os meus conhecimentos para trabalhar com ela.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                PYTHON
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <strong>Uma linguagem muito presente no meu dia a dia.</strong> Python está em meu componente curricular então eu tenho bastante contato. Já fiz treinamentos de IA nele, e é uma linguagem que tenho facilidade.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                HTML E CSS
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <strong>Tenho bastante contato.</strong> HTML e CSS também está em meu componente curricular, e gosto bastante. Acho muito interessante e prático.Tenho bastante facilidade também.
+            </div>
+          </div>
+        </div>
       </section>
-      <section>
+      <section id="contato">
         <!-- aqui vai um formulario de contato -->
          <h2 class="titulos">CONTATO</h2>
         <div class="mb-3">
@@ -204,14 +213,26 @@
           <label for="exampleFormControlTextarea1" class="form-label">Escreva sua mensagem aqui.</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
+        <br>
+        <div class="alert alert-primary" role="alert">
+          Tel : +55 11 96585-6499
+        </div>
+        <div class="alert alert-secondary" role="alert">
+          Gmail: evellynfurtado100@gmail.com
+        </div>
+        <div class="alert alert-success" role="alert">
+          Email: evellyn.furtado@etec.sp.gov.br
+        </div>
+        <div class="alert alert-danger" role="alert">
+          Abaixo o local onde você poderá me encontrar!
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.7122124238003!2d-46.425831017374165!3d-23.65047531003295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6ebde42d8f6b%3A0x2b1d7868b2d5e243!2sR.%20Don%C3%A1%20Paulina%20Dias%20de%20Jesus%2C%2036%20-%20RP11%20(Regi%C3%B5es%20de%20Planejamento)%2C%20Mau%C3%A1%20-%20SP%2C%2009333-010!5e0!3m2!1spt-BR!2sbr!4v1727070189274!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
      </main>
-   </div>
-   <footer>
+    </div>
+   <footer class="rodape">
     <!-- informações gerais sobre o desenvolvimento do site -->
-    <p>Feito por Evellyn Furtado</p>
-   </footer>
-
+    <p>Criado por © Evellyn Furtado 2024.</p> 
       <script src="js/bootstrap.js"></script>
       
 </body>
