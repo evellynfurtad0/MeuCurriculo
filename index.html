@@ -9,22 +9,22 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-   <header class="cabecalho">
-    <!-- Aqui vai o menu de navegação -->
-      <div class="logo">
-          <img src="img/logopc.png" alt="">
-          </div>
-          <nav id="menu">
-              <input type="checkbox" id="menu-toggle">
-              <label for="menu-toggle" class="menu-icon">&#9776;</label>
-              <ul>
-                  <li><a href="#quemeusou" onclick="document.getElementById('menu-toggle').click()">Quem eu sou</a></li>
-                  <li><a href="#carreira" onclick="document.getElementById('menu-toggle').click()">Carreira Acadêmica</a></li>
-                  <li><a href="#competencias" onclick="document.getElementById('menu-toggle').click()">Competências</a></li>
-                  <li><a href="#conhecimentos" onclick="document.getElementById('menu-toggle').click()">Conhecimentos</a></li>
-                  <li><a href="#contato" onclick="document.getElementById('menu-toggle').click()">Contato</a></li>
-              </ul>
-          </nav>
+    <header class="cabecalho">
+      <!-- Aqui vai o menu de navegação -->
+        <div class="logo">
+            <img src="img/logopc.png" alt="">
+            </div>
+            <nav id="menu">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                <ul>
+                    <li><a href="#quemeusou" onclick="document.getElementById('menu-toggle').click()">Quem eu sou</a></li>
+                    <li><a href="#carreira" onclick="document.getElementById('menu-toggle').click()">Carreira Acadêmica</a></li>
+                    <li><a href="#competencias" onclick="document.getElementById('menu-toggle').click()">Competências</a></li>
+                    <li><a href="#conhecimentos" onclick="document.getElementById('menu-toggle').click()">Conhecimentos</a></li>
+                    <li><a href="#contato" onclick="document.getElementById('menu-toggle').click()">Contato</a></li>
+                </ul>
+            </nav>
       </header>
     <main>   
     <div class="container">
@@ -33,21 +33,23 @@
       <section  id="quemeusou">
         <!-- Aqui vai um breve comentario sobre vc 1pg-->
          <h2 class="titulos">QUEM SOU EU</h2>
-         <div class="clearfix">
-          <img src="img/img1.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
-        
-          <p class="comeco">
-            Me chamo Evellyn Furtado. 
-          </p>
-        
-          <p class="comeco">
-            Sou estudante do 1 ano do Ensino médio integrado com o curso de Informática para Internet na ETEC Prof. Maria Cristinha Medeiros, e sou apaixonada por tudo que a tecnologia tem a oferecer. No meu período extracurricular, participo da mentoria "Conectados", onde estou aprendendo C#.
-          </p>
-        
-          <p class="comeco">
-            Além disso, também participo de uma pré-iniciação científica. Sou uma pessoa dedicada e sempre busco aprender coisas novas e enfrentar desafios que me ajudem a me desenvolver não só profissionalmente, mais que me ajudem no meu pessoal.
-          </p>
+         <div class="card mb-3" >
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/img1.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Me chamo Evellyn Furtado</h5>
+                <p class="card-text">Sou estudante do 1 ano do Ensino médio integrado com o curso de Informática para Internet na ETEC Prof. Maria Cristinha Medeiros, e sou apaixonada por tudo que a tecnologia tem a oferecer. No meu período extracurricular, participo da mentoria "Conectados", onde estou aprendendo C#.</p>
+                <p>Além disso, também participo de uma pré-iniciação científica. Sou uma pessoa dedicada e sempre busco aprender coisas novas e enfrentar desafios que me ajudem a me desenvolver não só profissionalmente, mais que me ajudem no meu pessoal.</p>
+                <p>Meu objetivo é encontrar oportunidades de estágio ou projetos que me permitam aplicar e expandir meus conhecimentos em tecnologia, contribuindo para a equipe e aprendendo com profissionais da área. </p>
+                <p class="card-text"><small class="text-body-secondary">09/2024</small></p>
+              </div>
+            </div>
+          </div>
         </div>
+
       <section id="carreira">
             <!-- Aqui vão aparecer 4 cards mostando os cursos que já fiz -->
             <h2 class="titulos">CARREIRA ACADÊMICA</h2>
@@ -203,7 +205,7 @@
                 <strong>Tenho bastante contato.</strong> HTML e CSS também está em meu componente curricular, e gosto bastante. Acho muito interessante e prático.Tenho bastante facilidade também.
             </div>
           </div>
-        </div>
+       </div>
       </section>
       <section id="contato">
         <!-- aqui vai um formulario de contato -->
@@ -226,11 +228,11 @@
         <div class="alert alert-danger" role="alert">
           Abaixo o local onde você poderá me encontrar!
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.215176219499!2d-46.416657024665405!3d-23.704008778702036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6cf6b9a660b5%3A0xb470d63bf1a2159e!2sEtec%20de%20Ribeir%C3%A3o%20Pires!5e0!3m2!1spt-BR!2sbr!4v1727150114894!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class=" responsive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.215176219499!2d-46.416657024665405!3d-23.704008778702036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6cf6b9a660b5%3A0xb470d63bf1a2159e!2sEtec%20de%20Ribeir%C3%A3o%20Pires!5e0!3m2!1spt-BR!2sbr!4v1727150114894!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
      </main>
     </div>
-   <footer class="rodape">
+   <footer class="rodape"  style="background-color: rgb(128, 47, 182);">
     <!-- informações gerais sobre o desenvolvimento do site -->
     <p>Criado por © Evellyn Furtado 2024.</p> 
       <script src="js/bootstrap.js"></script>

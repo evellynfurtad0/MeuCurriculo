@@ -6,6 +6,11 @@ body{
 .rodape{
     padding: 3%;
 }
+.titulos {
+    line-height: 3;
+    text-align: center;
+    font-weight: bold;
+}
 .cabecalho{
     display: flex;
     align-items: center;
@@ -18,35 +23,10 @@ body{
     z-index: 1000;
     box-sizing: border-box;
 }
-.titulos {
-    line-height: 3;
-    text-align: center;
-    font-weight: bold;
-}
 .logo img {
     width: 15%;
     height: auto;
     max-width: 100%;
-}
-h1{
-    color:rgb(0, 38, 255);
-    font-size: 2em;
-}
-h2 {
-    color: rgb(0, 38, 255);
-    font-size: 1.5em;
-}
-h4{
-    color: blueviolet;
-}
-h3{
-    color: rgb(41, 230, 3);
-}
-.comeco{
-    line-height: 1.5;
-    font-size: 1.2em;
-    text-align: justify;
-    
 }
 nav ul {
     list-style: none;
@@ -128,10 +108,54 @@ figure figcaption {
     text-align: center;
     color: rgba(58, 28, 83, 0.432);
 }
+
+h1{
+    color:rgb(0, 38, 255);
+    font-size: 2em;
+}
+h2 {
+    color: rgb(0, 38, 255);
+    font-size: 1.5em;
+}
+h4{
+    color: blueviolet;
+}
+h3{
+    color: rgb(41, 230, 3);
+}
+.comeco{
+    line-height: 1.5;
+    font-size: 1.2em;
+    text-align: justify;
+    
+}
+
+.caixa-imagem{
+    text-align: center;
+    margin-top: 1%;
+}
+
+figure {
+    text-align: center;
+    display: inline-block;
+}
+figure img {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(38, 14, 175, 0.7);
+    max-width: 100%;
+    height: auto;
+}
+figure figcaption {
+    margin: 1.0em;
+    text-align: center;
+    color: rgba(58, 28, 83, 0.432);
+}
 .preto{
     color: rgb(0, 0, 0);
 }
-footer{
-    background-color: rgb(128, 47, 182);
-}
 
+.responsive-map {
+    width: 100%;
+    display: block;
+}
